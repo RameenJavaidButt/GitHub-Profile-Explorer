@@ -1,5 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitHub Profile Explorer
 
+A React + Next.js project to fetch and display GitHub repositories for a given user, with sorting, pagination, and favorites functionality.
+
+---
+
+## Features Implemented
+
+- **Fetch GitHub User Profile Data**: Retrieve Profile picture
+Name
+Username
+Bio
+Location
+Number of followers
+Number of following
+Total public repositories
+- **Fetch GitHub Repositories**: Retrieve public repositories of a specified GitHub user.  
+- **Sorting**: Sort repositories by:
+  - Recently Updated
+  - Stars
+  - Name  
+- **Favorites**: Mark/unmark repositories as favorites and store them locally.  
+- **Pagination**: Navigate through repositories page by page (for users with many repos).  
+- **Dark/Light Mode**: Supports both dark and light UI themes.  
+- **Responsive Design**: Works well on mobile, tablet, and desktop.
+- **Loading/Error States**: Handles these cases.
+
+## Notes
+
+- GitHub API rate limits apply for unauthenticated requests. To avoid limits, consider adding a GitHub token in .env.local and updating the getGitHubRepos fetch function.
+- Favorites are stored in local storage and persist across sessions on the same browser.
+## Setup Instructions
+
+1. **Clone the repository**
+```bash
+git clone <your-repo-url>
+cd <repo-folder>
 ## Getting Started
 
 First, run the development server:
